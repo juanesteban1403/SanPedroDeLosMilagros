@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SanPedroDeLosMilagros</string>
+    <string name="titulo">San Pedro de los Milagros</string>
+    <string name="username">nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciarSes">Iniciar Sesion</string>
+    <string name="registro">Registrarse</string>
+    <string name="calcelar">Cancelar</string>
+    <string name="registrarse">Registro</string>
+    <string name="correo">Correo</string>
+    <string name="password1">Repetir contraseña</string>
+</resources>
