@@ -9,4 +9,7 @@
     <string name="registrarse">Registro</string>
     <string name="correo">Correo</string>
     <string name="password1">Repetir contraseña</string>
+    <string name="miPerfil">Mi perfil</string>
+    <string name="logout">Logout</string>
+    <string name="textogrande">es un municipio de Colombia, localizado en la subregión Norte del departamento de Antioquia. Limita por el norte con los municipios de Belmira y Entrerríos, por el este con el municipio de Donmatías, por el sur con los municipios de Girardota, Copacabana y Bello y por el oeste con el municipio de San Jerónimo. El municipio es llamado \"La Puerta Cultural del Norte\", y \"La Sixtina de Antioquia\".</string>
 </resources>

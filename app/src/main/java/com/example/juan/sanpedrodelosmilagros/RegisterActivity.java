@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText correo,Rusername,Rpassword,RRpassword;
@@ -25,7 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
         Rregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent;
+                Intent intent = new Intent();
                 setResult(RESULT_CANCELED,intent);
                 }
         });
@@ -33,12 +34,20 @@ public class RegisterActivity extends AppCompatActivity {
         Rregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent();
-                intent.putExtra("username",Rusername.getText().toString());
-                intent.putExtra("password",Rpassword.getText().toString());
-                intent.putExtra("email",correo.getText().toString());
-                setResult(RESULT_OK,intent);
-                finish();
+                if(Rpassword.getText().toString().equals(RRpassword.getText().toString())){
+
+                    Intent intent= new Intent();
+                    //con intent.putExtra mando informacion entre actividades
+                    intent.putExtra("username",Rusername.getText().toString()); // intent.putExtra("ETIQUETA",que voy a mandar)
+                    intent.putExtra("password",Rpassword.getText().toString());
+                    intent.putExtra("email",correo.getText().toString());
+                    setResult(RESULT_OK,intent);
+                    finish();
+                }
+                else {
+                    Toast.makeText(RegisterActivity.this, "Las contrasea no coinciden", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
