@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -15,7 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/titulo"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:textColorHint="@color/white"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -26,28 +28,37 @@
         android:layout_height="wrap_content"
         android:hint="@string/correo"
         android:layout_gravity="center"
-        android:id="@+id/correo"/>
+        android:id="@+id/correo"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/username"
         android:layout_gravity="center"
-        android:id="@+id/Rusername"/>
+        android:id="@+id/Rusername"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:layout_gravity="center"
-        android:id="@+id/Rpassword"/>
+        android:id="@+id/Rpassword"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password1"
         android:inputType="textPassword"
         android:layout_gravity="center"
-        android:id="@+id/RRpassword"/>
+        android:id="@+id/RRpassword"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,14 +70,20 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/registrarse"
-            android:id="@+id/Rregistro"/>
+            android:id="@+id/Rregistro"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/calcelar"
-            android:id="@+id/Rcancelar"/>
+            android:id="@+id/Rcancelar"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
 
     </LinearLayout>
 
