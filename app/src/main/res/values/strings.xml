@@ -12,4 +12,23 @@
     <string name="miPerfil">Mi perfil</string>
     <string name="logout">Logout</string>
     <string name="textogrande">es un municipio de Colombia, localizado en la subregión Norte del departamento de Antioquia. Limita por el norte con los municipios de Belmira y Entrerríos, por el este con el municipio de Donmatías, por el sur con los municipios de Girardota, Copacabana y Bello y por el oeste con el municipio de San Jerónimo. El municipio es llamado \"La Puerta Cultural del Norte\", y \"La Sixtina de Antioquia\".</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_todo">TodoActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="Hotel1">Hotel Estacion</string>
+    <string name="hotelestacion1">Direccion y correo</string>
+    <string name="Hotel2">Hotel Via Láctea</string>
+    <string name="Hotel3">Hotel Nutabes</string>
+    <string name="title_activity_todo2">Todo2Activity</string>
+    <string name="Res1">Restaurante Ricolandia</string>
+    <string name="Res2">Restaurante Pilones</string>
+    <string name="Res3">Restaurante La Sierra</string>
+    <string name="Turism1">Cascada</string>
+    <string name="Turism3">Truchera</string>
+    <string name="Turism2">Parque Temático Vía Láctea</string>
+    <string name="title_activity_todo3">Todo3Activity</string>
+    <string name="principal">Principal</string>
 </resources>

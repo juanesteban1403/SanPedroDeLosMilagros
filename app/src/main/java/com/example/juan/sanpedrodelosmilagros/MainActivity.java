@@ -8,6 +8,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
     String username,correo;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,16 +29,34 @@ public class MainActivity extends AppCompatActivity {
         int id=item.getItemId();
         switch(id){
             case R.id.mPerfil:
-                Intent intent = new Intent(MainActivity.this, PerfilActivity.class);
+                intent = new Intent(MainActivity.this, PerfilActivity.class);
                 intent.putExtra("username",username);
                 startActivity(intent);
 
                 break;
             case R.id.mLogOut:
-                Intent intent2 = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent2);
+                intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
                 finish();
                 break;
+            case R.id.mHoteles:
+                intent = new Intent(MainActivity.this,TodoActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mRes:
+                intent = new Intent(MainActivity.this,Todo2Activity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mtursm:
+                intent = new Intent(MainActivity.this,Todo3Activity.class);
+                startActivity(intent);
+                finish();
+                break;
+
+
+
         }
         return true;
     }

@@ -53,6 +53,9 @@ public class LoginActivity extends AppCompatActivity {
                     //intent.putExtra("email",Correo);
                     startActivity(intent);
                 }
+                else{
+                    Toast.makeText(LoginActivity.this, "Error login", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });

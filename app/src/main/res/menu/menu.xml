@@ -6,4 +6,15 @@
     <item
         android:id="@+id/mLogOut"
         android:title="@string/logout"/>
+    <item
+        android:id="@+id/mHoteles"
+        android:title="hoteles"/>
+    <item
+        android:id="@+id/mRes"
+        android:title="Restaurantes"/>
+    <item
+        android:id="@+id/mtursm"
+        android:title="Turismo"/>
+
+
 </menu>

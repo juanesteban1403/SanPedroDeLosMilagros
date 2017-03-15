@@ -9,15 +9,19 @@ import android.widget.TextView;
 
 public class PerfilActivity extends AppCompatActivity {
     TextView tUsername;
+    Intent intent;
+    String username;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
         tUsername = (TextView) findViewById(R.id.tUsename);
 
-        Bundle extras= getIntent().getExtras();
+        Bundle extras = getIntent().getExtras();
         tUsername.setText(extras.getString("username"));
     }
+
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
@@ -25,21 +29,45 @@ public class PerfilActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         switch (id) {
             case R.id.mPerfil:
-            /*    intent = new Intent(MainActivity.this, PerfilActivity.class);
-                intent.putExtra("username",username);
-                intent.putExtra("correo",correo);
-                startActivity(intent);*/
+                intent = new Intent(PerfilActivity.this, PerfilActivity.class);
+                intent.putExtra("username", username);
+                startActivity(intent);
+
                 break;
             case R.id.mLogOut:
-                Intent intent = new Intent(PerfilActivity.this, LoginActivity.class);
+                intent = new Intent(PerfilActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mHoteles:
+                intent = new Intent(PerfilActivity.this, TodoActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mRes:
+                intent = new Intent(PerfilActivity.this, Todo2Activity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mtursm:
+                intent = new Intent(PerfilActivity.this, Todo3Activity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mPrincipal:
+                intent = new Intent(PerfilActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
                 break;
         }
+
+
         return true;
     }
 }

@@ -9,8 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity">
-        </activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".PerfilActivity" />
         <activity android:name=".SplashActivity">
@@ -19,8 +18,19 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".TodoActivity"
+            android:label="@string/title_activity_todo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Todo2Activity"
+            android:label="@string/title_activity_todo2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Todo3Activity"
+            android:label="@string/title_activity_todo3"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
