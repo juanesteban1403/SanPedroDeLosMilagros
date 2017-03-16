@@ -60,11 +60,7 @@ public class PerfilActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
                 break;
-            case R.id.mPrincipal:
-                intent = new Intent(PerfilActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-                break;
+
         }
 
 
