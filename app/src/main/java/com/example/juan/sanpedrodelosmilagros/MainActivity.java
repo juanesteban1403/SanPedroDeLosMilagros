@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Bundle extras=getIntent().getExtras();
         username=extras.getString("username");
-        correo=extras.getString("correo");
+        correo=extras.getString("email");
     }
 
     @Override
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.mHoteles:
-                intent = new Intent(MainActivity.this,TodoActivity.class);
+                intent = new Intent(MainActivity.this,DrawerTodo1Activity.class);
                 startActivity(intent);
                 finish();
                 break;

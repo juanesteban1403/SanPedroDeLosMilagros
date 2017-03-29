@@ -28,8 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         login = (Button) findViewById(R.id.login);
         register = (Button) findViewById(R.id.register);
 
-        //Para extraer los datos van en Bundle
-        //Bundle extras = getIntent().getExtras();
+
+
 
         //Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
 
@@ -47,10 +47,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(username.getText().toString().equals(Username)&&password.getText().toString().equals(Password)){
-                    Intent intent =new Intent(LoginActivity.this,MainActivity.class);
+                    Intent intent =new Intent(LoginActivity.this,DrawerMainActivity.class);
                     intent.putExtra("username",Username);
                     intent.putExtra("password",Password);
-                    //intent.putExtra("email",Correo);
+                    intent.putExtra("email",Correo);
                     startActivity(intent);
                 }
                 else{
@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
             if(requestCode==1234&& resultCode==RESULT_OK){
                 Username=data.getExtras().getString("username");
                 Password=data.getExtras().getString("password");
+                Correo=data.getExtras().getString("email");
 
                 Log.d("nombre",data.getExtras().getString("username"));
                 Log.d("correo",data.getExtras().getString("email"));

@@ -30,7 +30,30 @@
         <activity
             android:name=".Todo3Activity"
             android:label="@string/title_activity_todo3"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DrawerMainActivity"
+            android:label="@string/title_activity_drawer_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DrawerTodo1Activity"
+            android:label="@string/title_activity_drawer_todo1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DrawerTodo2Activity"
+            android:label="@string/title_activity_drawer_todo2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DrawerTodo3Activity"
+            android:label="@string/title_activity_drawer_todo3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DrawerPerfilActivity"
+            android:label="@string/title_activity_drawer_perfil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HotelList1Activity" />
+        <activity android:name=".Hotel2listActivity" />
+        <activity android:name=".Hotel3listActivity"></activity>
     </application>
 
 </manifest>

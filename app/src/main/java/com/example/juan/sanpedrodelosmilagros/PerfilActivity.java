@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class PerfilActivity extends AppCompatActivity {
     TextView tUsername;
     Intent intent;
-    String username;
+    String username,correo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,27 +37,37 @@ public class PerfilActivity extends AppCompatActivity {
             case R.id.mPerfil:
                 intent = new Intent(PerfilActivity.this, PerfilActivity.class);
                 intent.putExtra("username", username);
+
+                intent.putExtra("email",correo);
                 startActivity(intent);
 
                 break;
             case R.id.mLogOut:
                 intent = new Intent(PerfilActivity.this, LoginActivity.class);
                 startActivity(intent);
+                intent.putExtra("username",username);
+                intent.putExtra("email",correo);
                 finish();
                 break;
             case R.id.mHoteles:
                 intent = new Intent(PerfilActivity.this, TodoActivity.class);
                 startActivity(intent);
+                intent.putExtra("username",username);
+                intent.putExtra("email",correo);
                 finish();
                 break;
             case R.id.mRes:
                 intent = new Intent(PerfilActivity.this, Todo2Activity.class);
                 startActivity(intent);
+                intent.putExtra("username",username);
+                intent.putExtra("email",correo);
                 finish();
                 break;
             case R.id.mtursm:
                 intent = new Intent(PerfilActivity.this, Todo3Activity.class);
                 startActivity(intent);
+                intent.putExtra("username",username);
+                intent.putExtra("email",correo);
                 finish();
                 break;
 

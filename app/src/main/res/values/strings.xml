@@ -31,4 +31,12 @@
     <string name="Turism2">Parque Temático Vía Láctea</string>
     <string name="title_activity_todo3">Todo3Activity</string>
     <string name="principal">Principal</string>
+    <string name="title_activity_drawer_main">DrawerMainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_drawer_todo1">DrawerTodo1Activity</string>
+    <string name="title_activity_drawer_todo2">DrawerTodo2Activity</string>
+    <string name="title_activity_drawer_todo3">DrawerTodo3Activity</string>
+    <string name="title_activity_drawer_perfil">DrawerPerfilActivity</string>
 </resources>
