@@ -39,4 +39,5 @@
     <string name="title_activity_drawer_todo2">DrawerTodo2Activity</string>
     <string name="title_activity_drawer_todo3">DrawerTodo3Activity</string>
     <string name="title_activity_drawer_perfil">DrawerPerfilActivity</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
